@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#
+count=0
+while [ $count -le 12 ]
+do 
+  count2=1
+  while [ $count2 -le 59 ]
+  do 
+    echo "Hour $count : Minute $count2"
+    count2=$((count2 + 1))
+  done
+  count=$((count + 1)) 
+done
