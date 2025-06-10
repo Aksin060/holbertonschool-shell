@@ -3,7 +3,7 @@
 for pid in /proc/[0-9]*; do
     if [[ -r "pid/comm" ]]; then
         name=(<"pid/comm")
-        if [[ "name" == *bash* ]]; then
+        if [[ "name" == bash ]]; then
             echo "PID: pid##*/, Name:name"
         fi
     fi
