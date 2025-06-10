@@ -1,12 +1,3 @@
 #!/usr/bin/env bash
 #
-for pid in /proc/[0-9]*; do
-    if [ -r "pid/comm" ]; then
-        name=$(cat "pid/comm")
-        case "$name" in
-            bash)
-                echo "PID:${pid##*/}, Name: $name"
-                ;;
-        esac
-    fi
-done
+pgrep -l bash
