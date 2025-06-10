@@ -2,10 +2,10 @@
 #
 for pid in /proc/[0-9]*; do
     if [ -r "pid/comm" ]; then
-        name=(cat "pid/comm")
-        case "name" in
+        name=$(cat "pid/comm")
+        case "$name" in
             bash)
-                echo "PID:{pid##*/}, Name: name"
+                echo "PID:${pid##*/}, Name: $name"
                 ;;
         esac
     fi
