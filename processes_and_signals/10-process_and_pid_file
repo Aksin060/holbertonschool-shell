@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-PIDFILE="/var/run/myscript.pid"
+PIDFILE="/tmp/myscript.pid"
 echo $$ > "$PIDFILE"
 ss(){
   echo "I hate the kill command"
