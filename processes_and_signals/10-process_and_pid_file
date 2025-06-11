@@ -10,9 +10,10 @@ ss(){
 s(){
   echo "Y U no love me?!"
 }
-term 'ss' SIGQUIT SIGTERM
-term 's' SIGINT
+trap 'ss' SIGQUIT SIGTERM
+trap 's' SIGINT
 while true
 do 
   echo "To infinity and beyond"
+  sleep 1
 done
