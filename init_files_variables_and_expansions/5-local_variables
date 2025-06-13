@@ -1,2 +1,2 @@
 #!/bin/bash
-source ./5-local_variables; set | grep -v BASH_EXECUTION_STRING | grep -v BASH_ARGV | head -2
+deaclare -F
